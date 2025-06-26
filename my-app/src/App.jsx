@@ -1,22 +1,11 @@
-import { useState } from "react";
+import Header from "./components/Header.jsx";
+import PersonList from "./components/PersonList.jsx";
 
 function App() {
-  const [data, setData] = useState([
-    { id: 1, name: "AbuHamid", gender: "Man" },
-    { id: 2, name: "Farah", gender: "Girl" },
-    { id: 3, name: "Sir", gender: "Man" },
-  ]);
-  const [show, setShow] = useState(true);
-  return (
-    <div>
-      <h1>Totall People : {data.length}</h1>
-      <button onClick={() => setShow(!show)}>{show ? "Hide" : "Show"}</button>
-      <ol>
-        {show &&
-          data.map((person) => <li key={person.id}>Name: {person.name}</li>)}
-      </ol>
-    </div>
-  );
+  <>
+    <Header />
+    <PersonList />
+  </>;
 }
 
 export default App;
