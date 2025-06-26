@@ -1,3 +1,5 @@
+import "./Components.css";
+
 const bakeryItems = [
   {
     id: 1,
@@ -34,16 +36,18 @@ const bakeryItems = [
 const Products = () => (
   <div>
     <h2>Bakery Items</h2>
-    <ul>
-      {bakeryItems.map((item) => (
-        <li>
-          <h3>
-            {item.name} - ${item.price.toFixed(2)}
-          </h3>
-          <p>{item.description}</p>
-        </li>
-      ))}
-    </ul>
+    <section className="items">
+      <ul>
+        {bakeryItems.map((item) => (
+          <li>
+            <h3>
+              {item.name} - ${item.price.toFixed(2)}
+            </h3>
+            <p>{item.description}</p>
+          </li>
+        ))}
+      </ul>
+    </section>
   </div>
 );
 

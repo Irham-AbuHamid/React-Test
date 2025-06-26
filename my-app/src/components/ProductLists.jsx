@@ -5,6 +5,7 @@ import cookieCream from "../assets/cookie-cream.svg";
 import cookie from "../assets/cookie.svg";
 
 import { useState } from "react";
+import "./Components.css";
 
 function ProductLists() {
   const [data, setData] = useState([
@@ -22,12 +23,14 @@ function ProductLists() {
       <ol>
         {show &&
           data.map((Product) => (
-            <li>
-              {Product.image && (
-                <img src={Product.image} alt={Product.name} width="25" />
-              )}
-              {Product.name}
-            </li>
+            <section>
+              <li className="lists">
+                {Product.image && (
+                  <img src={Product.image} alt={Product.name} width="25" />
+                )}
+                {Product.name}
+              </li>
+            </section>
           ))}
       </ol>
     </div>

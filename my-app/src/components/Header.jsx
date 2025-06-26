@@ -1,4 +1,5 @@
-import "./Header.css"; // Importing CSS for styling
+import "./Components.css";
+
 function Header() {
   return (
     <header>

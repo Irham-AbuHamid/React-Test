@@ -10,3 +10,14 @@ a {
   color: #ffffff;
   text-decoration: none;
 }
+.lists {
+  background-color: #cecccf;
+  border-radius: 10px;
+  border: #222222;
+}
+
+.items {
+  margin: 1px;
+  padding: 2px;
+  background-color: rgb(206, 204, 207);
+}
