@@ -17,7 +17,7 @@ function ProductLists() {
   const [show, setShow] = useState(true);
   return (
     <div>
-      <h1>Totall Products : {data.length}</h1>
+      <p>Totall Products : {data.length}</p>
       <button onClick={() => setShow(!show)}>{show ? "Hide" : "Show"}</button>
       <ol>
         {show &&

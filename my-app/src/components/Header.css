@@ -1,0 +1,12 @@
+.nav-links {
+  display: flex;
+  list-style-type: none;
+  padding: 20px;
+  justify-content: space-around;
+  background-color: #222222;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}

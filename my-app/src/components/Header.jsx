@@ -1,22 +1,9 @@
+import "./Header.css"; // Importing CSS for styling
 function Header() {
   return (
     <header>
-      <nav
-        style={{
-          margin: 0,
-          backgroundColor: "rgba(0, 0, 0, 0.8)",
-          fontSize: "1.2rem",
-        }}
-      >
-        <ul
-          style={{
-            display: "flex",
-            listStyle: "none",
-            justifyContent: "space-around",
-            margin: 0,
-            padding: "1rem 0",
-          }}
-        >
+      <nav>
+        <ul className="nav-links">
           <li>
             <a href="#home">Home</a>
           </li>
